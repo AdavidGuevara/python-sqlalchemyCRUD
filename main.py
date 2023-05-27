@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 Base = declarative_base()
-engine = create_engine("mysql+pymysql://root:Pyros*1998@localhost/test")
+engine = create_engine("mysql+pymysql://{user}:{password}@{host}/{database}")
 
 # Clase del modelo:
 class User(Base):
