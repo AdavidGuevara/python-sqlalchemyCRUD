@@ -85,7 +85,5 @@ def drop_user(id):
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)
-
-    drop_user(7)
-
+    
     session.close()
